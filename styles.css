@@ -8,6 +8,7 @@ body, html {
     padding-bottom: 20px;
     height: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.2;
 }
 #frontside {
     width: 400px;

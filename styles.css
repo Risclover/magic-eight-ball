@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+body, html { 
+    padding-top: 5px;
+    padding-bottom: 20px;
+    height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 #frontside {
     width: 400px;
     transition: 1s ease;
@@ -32,7 +39,7 @@
 .description {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 input {
@@ -101,7 +108,7 @@ h1 {
 
 .eightball {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,4 +140,210 @@ h1 {
     -ms-transition: opacity 3s ease-in-out;
     -o-transition: opacity 3s ease-in-out;
     opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin: 10px auto 20px auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .descriptionbox {
+        margin: 10px;
+    }
+    
+    .description {
+        font-size: .8rem;
+    }
+    .eightball {
+        width: 300px;
+    }
+
+    #backside, #frontside {
+        width: 100%;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    .resultsbox {
+        top: 100px;
+        width: 80px;
+    }
+
+    #results {
+        font-size: .7rem;
+    }
+
+    #footer {
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header {
+        margin: 10px auto 20px auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .descriptionbox {
+        margin: 10px;
+    }
+    
+    .description {
+        font-size: .8rem;
+    }
+    .eightball {
+        width: 400px;
+    }
+
+    #backside, #frontside {
+        width: 100%;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    .resultsbox {
+        top: 110px;
+        width: 80px;
+    }
+
+    #results {
+        font-size: .8rem;
+    }
+
+    #footer {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        margin: 10px auto 20px auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .descriptionbox {
+        margin: 10px;
+    }
+    
+    .description {
+        font-size: .9rem;
+    }
+    .eightball {
+        width: 500px;
+    }
+
+    #backside, #frontside {
+        width: 100%;
+    }
+
+    input {
+        width: 400px;
+    }
+
+    .resultsbox {
+        top: 110px;
+        width: 80px;
+    }
+
+    #results {
+        font-size: .8rem;
+    }
+    #footer {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        margin: 10px auto 20px auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    .descriptionbox {
+        margin: 10px auto 40px auto;
+    }
+    
+    .description {
+        font-size: 1.5vw;
+    }
+    .eightball {
+        width: 100%;
+    }
+
+    #backside, #frontside {
+        width: 450px;
+    }
+
+    input {
+        width: 500px;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+    .resultsbox {
+        top: 130px;
+        width: 170px;
+        height: 200px;
+    }
+
+    #results {
+        font-size: 1.1rem;
+    }
+
+    #footer {
+        font-size: 1.5vw;
+    }
+}
+
+#footer {
+    width: 100%;
+    background-color: rgba(4, 4, 5, 0.796);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 8px;
+    bottom: 0;
+}
+
+a {
+    color: rgb(137, 243, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

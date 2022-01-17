@@ -13,12 +13,13 @@ submitBtn.addEventListener('click', magicBall);
 // The Magic 8 Ball's inner workings. 
 function magicBall() {  
     results.textContent = ""; 
-    frontSide.classList.add("fade-out")
+    frontSide.classList.add("fade-out");
     setTimeout(function(){ 
+        backSide.classList.remove('backside');
         backSide.classList.add("fade-in")
     }, 500);
     // The ball's options every 5 questions (on the 5th question, not after).
-    const meanBall = ["You're still bugging me?", "Leave me alone.", "I'm tired. I need to rest.", "Why are you asking me so many questions?", "Stop bothering me and ask someone else for a change.", "Give someone else a turn.", "I'm not magical. Go outside."];
+    const meanBall = ["You're still bugging me?", "Leave me alone.", "I'm tired. I need to rest.", "Why are you asking me so many questions?", "Stop bothering me and ask someone else.", "Give someone else a turn.", "I'm not magical. Go outside."];
 
     // The ball's "regular" options. (7 yes, 7 no, 7 maybe/neutral)
     const regularAnswer = ["No.", "The cards aren't in your favor.", "Absolutely not.", "Perhaps not.", "Sorry, no go.", "Negative.", "That's a no from me.", "Yes.", "Absolutely.", "Affirmative.", "Your outlook is positive.", "It would seem so.", "I'm thinking yes.", "All signs point to yes.", "I don't know.", "I'm not sure.", "Perhaps.", "Maybe.", "Can't say yes, can't say no.", "I don't have an answer for you.", "Look within yourself."];

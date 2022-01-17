@@ -46,8 +46,7 @@ input {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     outline: none;
     padding: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 0;
     border: 1px solid black;
     width: 300px;
 }

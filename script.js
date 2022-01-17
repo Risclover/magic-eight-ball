@@ -39,7 +39,7 @@ function magicBall() {
         }
     } else {
 
-        results.textContent = "Please ask your question.";
+        results.textContent = "Please ask me a question.";
     }
     results.classList.remove("text-before")
     results.classList.add("text-fade-in");

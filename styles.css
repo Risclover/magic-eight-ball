@@ -78,7 +78,7 @@ h1 {
 }
 
 .resultsbox {
-    height: 100px;
+    height: 110px;
     position: absolute;
     top: 150px;
     display: flex;

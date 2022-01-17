@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Magic 8 Ball</h1>
+        <div class="descriptionbox">
+            <p class="description">Ask the Magic 8 Ball a yes or no question and get your fortune told.</p>
+            <p class="description">Careful, though - ask it too many questions and it may get a little cranky.</p>
+        </div>
+    </div>
+    <div class="eightball">
+        <div id="cycler">
+            <img src="side1.png" id="frontside">
+            <img src="side2.png" id="backside" class="backside">
+        </div>
+        <div class="inputstuff">
+            <input type="text" id="userquestion">
+            <button id="submitbtn">Submit</button>
+        </div>
+        <div class="resultsbox">
+            <p id="results" class="text-before"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
